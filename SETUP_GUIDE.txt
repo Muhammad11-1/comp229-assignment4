@@ -1,0 +1,51 @@
+# COMP229 Assignment 3 - Setup Guide
+
+## 1. Open the project in VS Code
+
+Open the folder: MyPortfolioBNew1
+
+## 2. Start MongoDB
+
+Make sure MongoDB Compass is connected to:
+mongodb://127.0.0.1:27017
+
+## 3. Start the backend
+
+Open a terminal:
+
+cd server
+npm install
+npm start
+
+## 4. Start the frontend
+
+Open a second terminal:
+
+cd client
+npm install
+npm run dev
+
+## 5. Create the admin user
+
+Open MongoDB Compass and insert into the users collection:
+
+{
+  "name": "Admin",
+  "email": "admin@portfolio.com",
+  "password": "admin123",
+  "role": "admin"
+}
+
+## 6. Test
+
+Frontend: http://localhost:5173
+Backend: http://localhost:3000
+
+This package includes:
+- Login page
+- Signup page
+- Education CRUD
+- Project CRUD
+- Contact form
+- Admin-only Add/Delete buttons
+- API integration examples
